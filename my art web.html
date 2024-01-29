@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            background: #C7B7A3;
+        }
+
+        nav {
+            background: #6D2932;
+            width: 100%;
+            overflow: auto;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            float: left;
+        }
+
+        nav a {
+            width: 120px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            font-size: 17px;
+            color: white;
+            padding: 20px 10px;
+            font-family: cursive;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: #E8D8C4;
+            color: black;
+        }
+
+        .container-1,
+        .container-2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .gallery {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                width: 100%;
+            }
+        }
+
+        footer {
+            padding: 10px;
+            font-size: 17px;
+            font-weight: bold;
+            text-align: center;
+            background: #6D2932;
+            color: #E8D8C4;
+            font-family: cursive;
+            letter-spacing: 1px;
+        }
+
+        .contact-section {
+    height: 100vh;
+    background-color: #6D2932;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 10s ease-in-out;
+    font-family: cursive;
+    font-weight: bold;
+    color: #E8D8C4;
+  }
+  .contact-section h2 {
+    margin-bottom: 20px;
+  }
+  .contact-section p {
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .contact-section.scroll-up {
+    transform: translateY(-100%);
+  }
+  .contact-section.scroll-down {
+    transform: translateY(100%);
+  }
+  .CA{
+        text-align: center;
+        color: #6D2932;
+  }
+  .NW{
+        text-align: center;
+        color: #6D2932;
+  }
+  .CC{
+        text-align: center;
+        color: #6D2932;
+  }
+  .AR{
+        text-align: center;
+        color: #6D2932;
+  }
+  .AP{
+        text-align: center;
+        color: #6D2932;
+  }
+  .OC{
+        text-align: center;
+        color: #6D2932;
+  }
+
+
+  .image img{
+                 opacity: 0.8;
+                 position: relative;
+                 vertical-align: top;
+                 transition: 0.6s;
+                 transition-property: opacity;
+
+               
+        }
+
+        .image:hover img{
+                        opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="image">
+
+   
+
+    <div class="container-1">
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="404"><p class="CA"><i><b>Central Artic</b></i></p> 
+        </div>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1504415724575-56cef5e3da72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="404">
+            <p class="NW"><i><b>Norway</b></i></p> 
+        </div>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1705714135183-dbe57919b735?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OHx8fGVufDB8fHx8fA%3D%3D"
+                alt="404"> <p class="CC" > <i> <b>Citylight,china</b></i></p> 
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-2">
+        <div class="gallery">
+            <img src="https://plus.unsplash.com/premium_photo-1703689533862-166b2986cf8a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0N3x8fGVufDB8fHx8fA%3D%3D" alt="404">
+            <p class="AR"> <i><b>Athens Rosses</b></i></p> 
+        </div>
+        <div class="gallery">
+            <img src="https://plus.unsplash.com/premium_photo-1704546741925-63f7c58d8ae7?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1MXx8fGVufDB8fHx8fA%3D%3D" alt="404">
+            <p class="AP" ><i><b>Atlantis pebbels</b></i></p> 
+        </div>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1705607014209-0314bf7daa5a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3OHx8fGVufDB8fHx8fA%3D%3D" alt="404">
+            <p class="OC"><i><b>Ocenia,cuba</b></i></p> 
+        </div>
+    </div>
+
+
+</div>
+
+
+    <div class="contact-section">
+        <h2> <span> <u>Contact Us</u></span></h2>
+        <p>Mystic fall <br> georgia-grill stefan/damon <br> <span>USA</span></p>
+        <p>armanalexander777@gmail.com. <br> san-teigo street. <br> Praesent mauris. <br> ph- +6968455467.</p>
+      </div>
+
+    <footer>
+        All right Reserved to Armaan
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+          let scrollPosition = window.scrollY;
+          let contactSection = document.querySelector('.contact-section');
+      
+          if (scrollPosition > 200) {
+            contactSection.classList.add('scroll-up');
+          } else {
+            contactSection.classList.remove('scroll-up');
+          }
+      
+          if (scrollPosition < (document.body.scrollHeight - window.innerHeight - 200)) {
+            contactSection.classList.add('scroll-down');
+          } else {
+            contactSection.classList.remove('scroll-down');
+          }
+        });
+      </script>
+   
+</body>
+
+</html>
